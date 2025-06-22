@@ -1,102 +1,172 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Portafolio - Científico de Datos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oliver GB | Portafolio de Ciencia de Datos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f7f9fc;
-      color: #333;
+      background: #f9fafb;
+      color: #1f2937;
     }
+
     header {
-      background-color: #2d3e50;
-      color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(to right, #31476c, #1d3465);
+      color: white;
     }
+
     header h1 {
-      margin: 0;
       font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 800;
     }
+
     header p {
       font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
     }
-    section {
+
+    .btn-group {
+      margin-top: 1rem;
+    }
+
+    .btn-group a {
+      text-decoration: none;
+      background: white;
+      color: #1d4ed8;
+      padding: 0.6rem 1.2rem;
+      margin: 0 0.4rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn-group a:hover {
+      background: #e0e7ff;
+    }
+
+    main {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      border-bottom: 2px solid #3b82f6;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+      margin-bottom: 1.5rem;
+    }
+
     .project {
-      background: white;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-bottom: 1.8rem;
     }
+
     .project h3 {
-      margin-top: 0;
+      font-size: 1.2rem;
+      color: #1e3a8a;
+      margin-bottom: 0.3rem;
     }
+
+    .project p {
+      margin-bottom: 0.5rem;
+      color: #374151;
+    }
+
+    .project a {
+      color: #3b82f6;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      color: #4b5563;
+    }
+
+    .contact a {
+      color: #1d4ed8;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
+      font-size: 0.85rem;
+      color: #9ca3af;
       margin: 3rem 0 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-    .buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: #2d3e50;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .buttons a:hover {
-      background: #445e76;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Tu Nombre Aquí</h1>
-  <p>Científico de Datos | Proyectos con Machine Learning, NLP y Visualización</p>
-  <div class="buttons">
-    <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/tuusuario" target="_blank">LinkedIn</a>
-    <a href="CV.pdf" target="_blank">Descargar CV</a>
+  <h1>Oliver González Bagatella</h1>
+  <p>Científico de datos con formación en ingeniería en agronomía y experiencia en machine learning, NLP y visualización de datos.</p>
+  <div class="btn-group">
+    <a href="https://github.com/Olivergb98" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/oliver-gb" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Olivergb98/Employability-kit/blob/main/Oliver_Gonzalez_CV.pdf" target="_blank">CV</a>
   </div>
 </header>
 
-<section>
-  <h2>Proyectos Destacados</h2>
+<main>
+  <section>
+    <h2>Proyectos destacados</h2>
 
-  <div class="project">
-    <h3>Clasificación de Sentimientos en Reseñas de Películas</h3>
-    <p>Modelo de NLP con BERT y LightGBM entrenado sobre el dataset de IMDb. Incluye preprocesamiento, embeddings y evaluación con métricas avanzadas.</p>
-    <a href="https://github.com/tuusuario/proyecto-nlp" target="_blank">Ver en GitHub</a>
-  </div>
+    <div class="project">
+      <h3>Clasificación de Sentimientos con BERT</h3>
+      <p>Modelos de NLP que analiza sentimientos en reseñas de películas con herramientas como NLTK, Spacy, TfidVectorizer y Bert. Incluye preprocesamiento, embeddings y evaluación de métricas.</p>
+      <a href="https://github.com/Olivergb98/Proyectos-TripleTen/blob/e790e43cf59bad8b8053b39104540d658de4c7e0/Proyecto_15/Aprendizaje%20para%20textos.ipynb" target="_blank">Ver en GitHub</a>
+    </div>
 
-  <div class="project">
-    <h3>Predicción de Rendimiento de Cultivos</h3>
-    <p>Proyecto que combina datos satelitales, meteorológicos y de suelo para predecir el rendimiento agrícola usando modelos de regresión y análisis espacial.</p>
-    <a href="https://github.com/tuusuario/proyecto-agricultura" target="_blank">Ver en GitHub</a>
-  </div>
+    <div class="project">
+      <h3>Optimización de planes telefónicos con ML</h3>
+      <p>Análisis de consumo de llamadas, mensajes y datos de clientes de una empresa de telefonía móvil con el fin de escoger el modelo óptimo para que implemente la empresa. Se comparó la precisión y tiempo computacional de Regresión Logística, Árbol de Decisión y Random Forest.
+          </p>
+      <a href="https://github.com/Olivergb98/Proyectos-TripleTen/blob/e790e43cf59bad8b8053b39104540d658de4c7e0/Proyecto%209%20Modelos%20ML.ipynb" target="_blank">Ver en GitHub</a>
+    </div>
 
-  <div class="project">
-    <h3>Análisis de Segmentación de Clientes</h3>
-    <p>Clustering de clientes con K-Means y visualización interactiva con Seaborn y Plotly. Aplicación en marketing y personalización.</p>
-    <a href="https://github.com/tuusuario/proyecto-clientes" target="_blank">Ver en GitHub</a>
-  </div>
-</section>
+    <div class="project">
+      <h3>Series temporales para predicción de viajes de taxis.</h3>
+      <p>Manejo de series temporales con el fin de hacer predicciones de la cantidad de taxis. Para esto, se utiliza una regresión lineal acompañada de rolling mean y lag para mejorar considerablemente el modelo hasta que cumpla con las expectativas declaradas de un RSME menor a 48.</p>
+      <a href="https://github.com/Olivergb98/Proyectos-TripleTen/blob/e790e43cf59bad8b8053b39104540d658de4c7e0/Proyecto%2014%20Series%20Temporales.ipynb" target="_blank">Ver en GitHub</a>
+    </div>
+  </section>
 
-<footer>
-  © 2025 Tu Nombre – Todos los derechos reservados.
-</footer>
+  <section class="contact">
+    <p> Contacto: <a href="mailto:tu-olivergb98@gmail.com">oliverg98@gmail.com</a></p>
+  </section>
+</main>
+
+
 
 </body>
 </html>
